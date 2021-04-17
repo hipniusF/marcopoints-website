@@ -7,7 +7,46 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<h1>Marco Points (mPT)</h1>
-	<img alt="tetrahedron" src="assets/logo_bg2.png" height="150px" width="150px"/>
+	<header>
+		<img alt="tetrahedron" src="assets/logo.svg" height="200px" width="200px"/>
+		<h1>Marco Points (mPT)</h1>
+	</header>
+	<main>
+		<section class="install">
+			<h1>How to install</h1>
+			<p class="surr-down-arrow">First of all you need to have metamask installed (It's just a browser extension)</p>
+			<a class="button" href="https://metamask.io/download.html">
+				<button class="big-red">Install now</button>
+			</a>
+			<br>
+			<p>Now you have to property configure metamask</p>
+			<p>If you want to do it automatically click the below button</p>
+			<button class="big-red" id="clear-install">Configure from clear metamask extension</button>
+			<br>
+			<p>
+				If you want to install it manually connect to the 
+				<a href="https://deveth.org">deveth</a> network and add the ERC20 token:
+			</p>
+			<br>
+			<ul>
+				<li>
+					<p>
+					<strong>Contract address</strong><span class="contractAddr"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+					<strong>Symbol</strong><span class="symbol"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+					<strong>Decimals</strong><span class="decimals"></span>
+					</p>
+				</li>
+		</section>
+	</main>
+
+	<script src="index.js"></script>
 </body>
 </html>
