@@ -36,7 +36,7 @@ autoInstallBtn.onclick = async () => {
 			rpcUrls: rpcUrls
 		};
 		await ethereum.request({
-			methhods: 'wallet_addEthereumChain',
+			method: 'wallet_addEthereumChain',
 			params: [addEthereumChainParameter]
 		});
 	}
