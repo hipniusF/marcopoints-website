@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>marcoPoints</title>
+	<meta charset="utf-8"> 
+	<link rel="icon" type="image/png" href="../assets/logo_bg2.png">
+	<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+	<header>
+		<img alt="tetrahedron" src="../assets/logo.svg" height="200px" width="200px"/>
+		<h1>Marco Points (mPT)</h1>
+	</header>
+	<main>
+		<section class="install">
+			<h1>¿Cómo instalar?</h1>
+			<p class="surr-down-arrow">Primero de todo, necesitas tener instalado metamask (es una extensión de navegador)</p>
+			<a class="button" href="https://metamask.io/download.html">
+				<button class="big-red">Intalar ahora</button>
+			</a>
+			<br>
+			<p>Ahora tienes que añadir el token de los marcoPoints a metamask (configura tú metamask primero)</p>
+			<p>Sí quieres añadir el token de forma automática pulsa el siguiente botón:</p>
+			<button class="big-red" id="clear-install">Añadir token desde versión limpia de metamask</button>
+			<br>
+			<p>
+				Si prefieres añadir el token manualmente conéctate a la red de
+				<a href="https://deveth.org">deveth</a> y añade el token ERC20:
+			</p>
+			<br>
+			<ul>
+				<li>
+					<p>
+					<strong>Dirección del contrato</strong><span class="contractAddr"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+					<strong>Símbolo</strong><span class="symbol"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+					<strong>Decimales</strong><span class="decimals"></span>
+					</p>
+				</li>
+		</section>
+	</main>
+
+	<script src="../index.js"></script>
+</body>
+</html>
