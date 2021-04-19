@@ -1,5 +1,5 @@
 const autoInstallBtn = document.querySelector('#clear-install');
-if (navigator.language.includes('es') && !location.href.includes('es')) location.href = '/es/';
+// if (navigator.language.includes('es') && !location.href.includes('es')) location.href = '/es/';
 
 // VARIABLES
 // ERC20 token variables
