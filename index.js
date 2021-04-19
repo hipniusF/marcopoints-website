@@ -1,3 +1,5 @@
+import abi from './assets/mPTabi.js';
+
 const autoInstallBtn = document.querySelector('#clear-install');
 // if (navigator.language.includes('es') && !location.href.includes('es')) location.href = '/es/';
 
@@ -22,6 +24,15 @@ const rpcUrls = ['https://rpc.deveth.org'];
 document.querySelector('span.contractAddr').textContent = tokenAddress;
 document.querySelector('span.symbol').textContent = tokenSymbol;
 document.querySelector('span.decimals').textContent = tokenDecimals;
+
+(async () => {
+	const web3 = new Web3(ethereum);
+	const contract = new web3.eth.Contract(abi, tokenAddress);
+	const weiSupply = await contract.methods.totalSupply().call();
+	const supply = await web3.utils.fromWei(weiSupply);
+
+	document.querySelector('span.total-supply').textContent = supply;
+})();
 
 autoInstallBtn.onclick = async () => {
 	if (!window.ethereum) {
