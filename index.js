@@ -36,7 +36,11 @@ document.querySelector('span.decimals').textContent = tokenDecimals;
 	const weiSupply = await contract.methods.totalSupply().call();
 	const supply = await web3.utils.fromWei(weiSupply);
 
+<<<<<<< HEAD
 	document.querySelector('span.total-supply').textContent = supply + ' mPT';
+=======
+	document.querySelector('span.total-supply').textContent = supply;
+>>>>>>> f11812111384d09fc91dd67261dbc538f4f2766c
 })();
 
 autoInstallBtn.onclick = async () => {
