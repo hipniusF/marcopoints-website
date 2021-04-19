@@ -24,6 +24,17 @@ h1 {
 	font-size: 3rem;
 }
 
+h2 {
+	font-size: 2rem;
+	margin: 1rem 0 2rem;
+}
+
+h3 {
+	width: 1200px;
+	font-size: 1.2rem;
+	margin: 4rem auto;
+}
+
 main {
 	min-height: 100vh;
 	background: #2b2e4a;
