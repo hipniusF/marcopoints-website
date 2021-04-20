@@ -6,7 +6,6 @@
 }
 
 body {
-	/* min-height: 98vh; */
 	color: #e84545;
 	font-family: monospace;
 	text-align: center;
@@ -15,7 +14,7 @@ body {
 header {
 	background: #2b2e4a;
 	padding-top: 5rem;
-	height: calc(100vh - 5rem);
+	min-height: calc(100vh - 5rem);
 	background: radial-gradient(circle, rgba(43,46,74,1) 0%, rgba(83,53,74,1) 150%); /* rgba(144,55,73,1) 100%); */
 }
 
@@ -26,11 +25,11 @@ h1 {
 
 h2 {
 	font-size: 2rem;
-	margin: 1rem 0 2rem;
+	padding: 1rem 0 2rem;
 }
 
 h3 {
-	width: 1200px;
+	max-width: 1200px;
 	font-size: 1.2rem;
 	margin: 4rem auto;
 }
@@ -39,6 +38,7 @@ main {
 	min-height: 100vh;
 	background: #2b2e4a;
 	color: #e84545;
+	padding-bottom: 4rem;
 }
 
 main p {
@@ -68,6 +68,7 @@ strong {
 }
 
 button.big-red {
+	max-width: 80%;
 	min-width: 150px;
 	margin: 2rem auto;
 	font-size: .8rem;
@@ -79,4 +80,8 @@ button.big-red {
 	color: #2b2e4a;
 	font-weight: bold;
 	background: #ed2b2b;
+}
+
+p {
+	overflow-wrap: break-word;
 }
