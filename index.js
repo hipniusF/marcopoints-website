@@ -26,11 +26,7 @@ document.querySelector('span.symbol').textContent = tokenSymbol;
 document.querySelector('span.decimals').textContent = tokenDecimals;
 
 (async () => {
-	if (!window.ethereum) {
-		document.querySelector('span.total-supply').textContent = 'you need metamask for this';
-		return;
-	}
-	const web3 = new Web3(ethereum);
+	const web3 = new Web3(window.ethereum || rpcUrls[0]);
 
 	const contract = new web3.eth.Contract(abi, tokenAddress);
 	const weiSupply = await contract.methods.totalSupply().call();
